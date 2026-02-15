@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Javascript Callbacks</h2>
+
+    <script>
+
+        //A callback is a function passed as an argument to another function.
+
+        function greeting(name) {
+            alert('Hello ' + name);
+        }
+
+        function processUserInput(callback) {
+            var name = prompt('Please enter your full name.');
+            callback(name);
+        }
+
+        processUserInput(greeting);
+
+
+    </script>
+    
+</body>
+</html>
